@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "esModuleInterop": true,
+    "outDir": "./bin",
+    "baseUrl": "./",
+    "paths": {
+      "@hn/*": ["./src/*"]
+    },
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

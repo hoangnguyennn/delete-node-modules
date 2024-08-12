@@ -1,0 +1,39 @@
+{
+  "name": "delete-node-modules",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "tsnd src/bin.ts",
+    "build": "rm -rf bin && tsc",
+    "test": "node ./bin/bin.js",
+    "prettier": "npx prettier bin --check",
+    "prettier:fix": "yarn prettier --write",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "bin": {
+    "delete-node-modules": "./bin/bin.js",
+    "dnm": "./bin/bin.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "5.3.8",
+    "glob": "11.0.0",
+    "yargs": "17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.0",
+    "@types/yargs": "17.0.33",
+    "eslint": "9.9.0",
+    "eslint-config-prettier": "9.1.0",
+    "prettier": "3.3.3",
+    "ts-node-dev": "2.0.0",
+    "tsc-alias": "1.8.10",
+    "typescript": "5.5.4"
+  }
+}
